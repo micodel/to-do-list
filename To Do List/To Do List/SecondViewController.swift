@@ -20,6 +20,11 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // Function to close keyboard when user clicks outside of text field.
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        self.view.endEditing(true)
+    }
+    
     // UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
         // Tells keyboard to close upon click/push of keyboards return button.
