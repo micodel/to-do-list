@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,23 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Required functions from UITableViewDataSource
+    // Can be found by holding command key and clicking inheritance above.
+    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+        // Returns number of tasks in task array.
+        return taskMgr.tasks.count
+    
+    }
+    // This function will look to execute the x number of times returned in the function above.
+    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        
+        // Style below gives the title text with smaller text below.
+        // reuseIdentifier is text that gets used if nothing provided.
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default")
+        // Returns current iteration cell to list. 
+        return cell
     }
 
 
