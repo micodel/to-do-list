@@ -33,7 +33,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Style below gives the title text with smaller text below.
         // reuseIdentifier is text that gets used if nothing provided.
         let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default")
-        // Returns current iteration cell to list. 
+        
+        cell.text = taskMgr.tasks[indexPath.row].name
+        cell.detailTextLabel.text = taskMgr.tasks[indexPath.row].desc
+        
+        
+        // Returns current iteration cell to list.
         return cell
     }
 
