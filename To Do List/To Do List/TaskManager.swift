@@ -9,6 +9,7 @@
 import UIKit
 
 // Initializes an instance of the TaskManager object below.
+
 // VariableName:variableType = ClassObject()
 var taskMgr:TaskManager = TaskManager()
 
