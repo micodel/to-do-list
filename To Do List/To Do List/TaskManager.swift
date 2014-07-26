@@ -23,5 +23,11 @@ class TaskManager: NSObject {
     
     // Initializes an array to contain all (added) tasks.
     var tasks = task[]()
+    
+    // Function to add a task. Accepts two parameters, name and description.
+    func addTask(name: String, desc: String){
+        // Appends a new task object to the task array.
+        tasks.append(task(name: name, desc: desc))
+    }
    
 }
