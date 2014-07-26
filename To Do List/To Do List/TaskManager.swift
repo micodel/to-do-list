@@ -8,6 +8,17 @@
 
 import UIKit
 
+// Initializes an instance of the TaskManager object below.
+// VariableName:variableType = ClassObject()
+var taskMgr:TaskManager = TaskManager()
+
+// Defines constructor for a task.
+struct task {
+    // Gives the name attribute for a task the default value of 'no name'.
+    var name = "no name"
+    var desc = "no description"
+}
+
 class TaskManager: NSObject {
    
 }
