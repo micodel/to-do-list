@@ -20,5 +20,8 @@ struct task {
 }
 
 class TaskManager: NSObject {
+    
+    // Initializes an array to contain all (added) tasks.
+    var tasks = task[]()
    
 }
