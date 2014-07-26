@@ -9,7 +9,11 @@
 import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
-                            
+    
+    // The exclaimation point (!) states we are initializing an object that does not exist yet.
+    @IBOutlet var taskName:UITextField!
+    @IBOutlet var taskDesc:UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
