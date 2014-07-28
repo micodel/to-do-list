@@ -69,11 +69,18 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitTask:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="KPS-L8-KvD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add New" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="taskDesc" destination="l37-Xy-XI2" id="YXs-Vh-nRn"/>
+                        <outlet property="taskName" destination="de6-V6-E7r" id="7db-hR-74u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
