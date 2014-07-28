@@ -55,7 +55,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
         
         if(editingStyle == UITableViewCellEditingStyle.Delete) {
-            
+            taskMgr.tasks.removeAtIndex(indexPath.row);
+            taskTable.reloadData()
         }
     }
 
