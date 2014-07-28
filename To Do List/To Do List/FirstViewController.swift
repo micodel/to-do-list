@@ -49,6 +49,15 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Returns current iteration cell to list.
         return cell
     }
+    
+    // Function to delete a task from the list.
+    // Uses built in functionality of UITableViewDelegate.
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
+        
+        if(editingStyle == UITableViewCellEditingStyle.Delete) {
+            
+        }
+    }
 
 
 }
