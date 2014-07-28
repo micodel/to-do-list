@@ -5,10 +5,8 @@ By: Michael Hamel
 
 iPhone app built in Swift following rm2kdev's YouTube tutorial. 
 
-Example of a tabbed application.  
-
-Add a task to a to do list.  
-
+Example of a tabbed application.
+Add a task to a to do list.
 View the entire list, and swipe items off when completed.  
 
 ## Summary
