@@ -9,6 +9,8 @@
 import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet var taskTable: UITableView!
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // When returning to view...
+    override func viewWillAppear(animated: Bool) {
+        taskTable.reloadData();
+    }
+    
     
     // Required functions from UITableViewDataSource
     // Can be found by holding command key and clicking inheritance above.
